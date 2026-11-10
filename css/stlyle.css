@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+ul, ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+   width: 1320px;
+    margin: 0 auto;
+}
+.headerpart{
+    padding: 40px 0;
+    background: darkorchid;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+.menu ul li a{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: .4s;
+     font-family: "Pathway Gothic One", sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+
+.menu ul li a:hover {
+    color: tomato;
+     
+}
+.menu ul li a::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition: .4s;
+    background: white;
+    content: "";
+
+}
+.menu ul li a:hover::after{
+    color: tomato;
+    width: 100%
+    
+}
+.menu ul li a::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    transition: .4s;
+    background: white;
+    content: "";
+}
+.menu ul li a:hover::before{
+    color: tomato;
+    width: 100%
+}
+.barnnerpart{
+      
+    background: url(../images/light.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.overly{
+    background: rgba(0, 0, 0, 0.6);
+    padding:250px 0 ;
+}
+
+
+
+
+
